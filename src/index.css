@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body,html {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */ 
+:root{
+  --accentColor: #6f00ff;
+  --darkerAccentColor: #430099;
+  --accentColorLight: #ac6dff;
+  --dangerColor: #bd0451;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.fsize1{
+  font-size: 2.1rem;
+}
+.fsize2{
+  font-size: 1.6rem;
+}
+.fsize3{
+  font-size: 0.9rem;
+}
+
+.lightBold{
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+
+.flex{
+  display:flex;
+}
+.column{
+  flex-direction: column;
+}
+.gap1{
+  gap: 1rem;
+}
+.gap2{
+  gap: 0.5rem;
+}
+.gap3{
+  gap:0.3rem;
+}
+
+
+.maingrid{
+  display: grid;
+  grid-template-columns: 0.4fr 1.2fr 0.4fr;
+  grid-template-areas: ". profileBox ."
+  ". generalInfo ."
+  ". educationBox ."
+  ". workBox ."
+  ". skillBox ."
+  ". interestBox .";
+  row-gap: 4rem;
+}
+.cvContainer{
+  display: grid;
+  grid-template-columns: 0.35fr 1.3fr 0.35fr;
+  grid-template-areas: ". cvBox .";
+}
+.profileBox{
+  grid-area: profileBox;
+  background-color: #ac6dff13;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+   box-shadow: inset 0px 0px 1px 1px #ac6dff42; 
+}
+
+.generalInfo{
+  grid-area: generalInfo;
+   
+}
+.educationBox{
+  grid-area: educationBox;
+  
+}
+.workBox{
+  grid-area: workBox;
+   
+}
+.skillBox{
+  grid-area: skillBox;
+   
+}
+.interestBox{
+  grid-area: interestBox;
+  
+}
+.background{
+  background-color: #ac6dff13;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: inset 0px 0px 1px 1px #ac6dff42;
+}
+/* .inputWidth1{
+  width: 21rem;
+
+} */
+.inputHeight1{
+  height: 2rem;
+}
+.inputHeight2{
+  height: 7rem
+}
+.inputWidth2{
+  width: 100%;
+
+}
+.spaceBetween{
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  font-weight: 500;
+}
+
+.circle{
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+}
+.vcentre{
+  align-items: center;
+}
+input,textarea{
+  border: none;
+  outline: none;
+  border: 1px solid #ac6dff91;
+  background-color: #ac6dff2b;
+}
+.deleteIcon{
+  /* width: 100%;
+  height: 100%; */
+}
+.deleteSkill{
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #bd0451;
+}
+.button1{
+  background-color: #6f00ff;
+  border: none;
+  color: white;
+  width: min-content;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+.button2{
+  background-color: #bd0451;
+  border: none;
+  color: white;
+  width: min-content;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  align-self: flex-end;
+}
+.hide{
+  display: none;
+  
+}
+.pointer{
+  cursor: pointer;
+}
+.pointer:hover{
+  color: #6f00ff;
+}

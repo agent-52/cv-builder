@@ -1,0 +1,6 @@
+.eduHeading{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  align-items: center;
+}

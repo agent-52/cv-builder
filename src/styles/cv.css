@@ -1,0 +1,93 @@
+.cvBox{
+  grid-area: cvBox;
+  display: grid;
+  grid-template-columns: 1.1fr 3fr;
+  gap: 3rem;
+  margin-top: 1.7rem;
+  border: 1px solid rgba(128, 128, 128, 0.267);
+  margin-bottom: 1rem;
+  
+}
+.cvBox h3{
+  padding-bottom: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 550;
+  border-bottom: 2.2px solid rgba(128, 128, 128, 0.352);
+}
+.smallBox{
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.largeBox{
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-right: 1.7rem;
+  
+}
+.fullName{
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.profession{
+  color: #6f00ff;
+  font-weight: 510;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  letter-spacing: 0.14rem;
+}
+.blue{
+  color: #6f00ff;
+}
+a{
+  text-decoration: none;
+}
+.gap4{
+  gap: 0.2rem
+}
+.gap5{
+  gap: 1.6rem
+}
+.cvIcon{
+  width: 22px;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.cvGrid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.9rem;
+}
+.alignCenter{
+  display: flex;
+  align-items: center;
+}
+.position{
+  font-weight: 550;
+  font-size: 1.08rem;
+}
+.company{
+  font-size: 1.05rem;
+  text-transform: capitalize;
+}
+.bold3{
+  font-weight: 500;
+}
+.degree{
+  font-weight: 550;
+  font-size: 1.08rem;
+}
+.school{
+  font-size: 1.05rem;
+  text-transform: capitalize;
+}
+.blackBorder{
+  border: 2px solid grey;
+}

@@ -1,0 +1,12 @@
+
+.genHeading{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.inputGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; 
+}

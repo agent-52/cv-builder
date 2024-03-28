@@ -1,0 +1,19 @@
+.profileBox{
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.circle2{
+  width: 180px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(86, 0, 199, 0.088);
+  border: 2px dashed #6f00ff;
+  align-self: center;
+  object-fit: cover;
+  
+}
+.placeCenter{
+  display: grid;
+  place-items: center;
+}
